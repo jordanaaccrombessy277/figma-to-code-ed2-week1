@@ -34,7 +34,7 @@ function Header() {
         
         </button>
 
-        <nav className={`fixed py-32 px-8 z-10 top-0 bg-white shadow-md w-full h-full lg:hidden duration-1000 ${isMenuOpen ? 'translate-x-0' : 'translate-x-[100%]'}`}>
+        <nav className={`fixed py-32 z-10 top-0 bg-white w-full h-screen lg:hidden duration-1000 ${isMenuOpen ? 'translate-x-0' : 'translate-x-[100%]'}`}>
 
           <ul className="text-[#12171F] flex flex-col gap-7">
               <li className=""><Link to="/" className="font-[Semibold]">Home</Link></li>
@@ -44,9 +44,9 @@ function Header() {
               <li className=""><Link to="/" className="font-[Semibold]">About us</Link></li>
           </ul>
       
-          <ul className="text-[#12171F] flex flex-row py-8 gap-5">
-              <li className="border-r-2 border-[#0E1218]"><Link to="/" className="font-[Semibold] pr-4">Sign Up</Link></li>
-              <li className=""><Link to="/" className="font-[Semibold] text-white bg-[#0E1218] px-5 py-2 rounded-[42px]">Connect Wallet</Link></li>
+          <ul className="text-[#12171F] flex flex-row py-16 gap-5">
+              <li className="border-r-2 border-[#0E1218]"><Link to="/" className="font-[Semibold] px-6">Sign Up</Link></li>
+              <li className=""><Link to="/" className="font-[Semibold] text-white bg-[#0E1218] px-6 py-3 rounded-[42px]">Connect Wallet</Link></li>
           </ul> 
 
         </nav>
